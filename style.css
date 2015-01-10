@@ -1,0 +1,124 @@
+#clouds {
+	position: absolute;
+	top: 80px;
+	left: 40px;
+}
+
+#sun {
+	position: absolute;
+	top: 30px;
+	left: 920px;
+}
+
+#stalk {
+	position: absolute;
+	top: 470px;
+	left: 290px;
+	
+	width: 20px;
+	height: 300px;
+	z-index: 1;
+}
+#flower {
+	position: absolute;
+	top: 200px;
+	left: 115px;
+	z-index: 2;
+}
+
+#stalk2 {
+	position: absolute;
+	top: 470px;
+	left: 800px;
+	
+	width: 20px;
+	height: 300px;
+	z-index: 1;
+}
+#flower2 {
+	position: absolute;
+	top: 200px;
+	left: 625px;
+	z-index: 2;
+}
+
+.line {
+	border-top: 1px solid #000000;
+	width: 20px;
+}
+
+#mainline {
+	width: 1000px;
+	height: 800px;
+}
+
+.line_extended {
+	width:1000px;
+	background:red;
+	transition:width 3s;
+	-moz-transition:width 3s; /* Firefox 4 */
+	-webkit-transition:width 3s; /* Safari and Chrome */
+	-o-transition:width 3s; /* Opera */
+	-webkit-animation-fill-mode: forwards;
+}
+
+
+#main:hover #flower img {
+	transform:rotate(1500deg);
+	-moz-transform:rotate(1500deg); /* Firefox 4 */
+	-webkit-transform:rotate(1500deg); /* Safari and Chrome */
+	-o-transform:rotate(1500deg); /* Opera */
+	
+	-webkit-transition-duration: 6s;
+  	-moz-transition-duration: 6s;
+  	-o-transition-duration: 6s;
+  	transition-duration: 6s;
+}
+
+#main:hover #flower2 img {
+	transform:rotate(-1500deg);
+	-moz-transform:rotate(-1500deg); /* Firefox 4 */
+	-webkit-transform:rotate(-1500deg); /* Safari and Chrome */
+	-o-transform:rotate(-1500deg); /* Opera */
+	
+	-webkit-transition-duration: 6s;
+  	-moz-transition-duration: 6s;
+  	-o-transition-duration: 6s;
+  	transition-duration: 6s;
+}
+
+#main:hover #sun img {
+	transform:rotate(-1500deg);
+	-moz-transform:rotate(-1500deg); /* Firefox 4 */
+	-webkit-transform:rotate(-1500deg); /* Safari and Chrome */
+	-o-transform:rotate(-1500deg); /* Opera */
+	
+	-webkit-transition-duration: 40s;
+  	-moz-transition-duration: 40s;
+  	-o-transition-duration: 40s;
+  	transition-duration: 40s;
+}
+
+#main:hover #clouds img {
+	margin-left:600px;
+	background:red;
+	transition:margin-left 10s;
+	-moz-transition:margin-left 10s; /* Firefox 4 */
+	-webkit-transition:margin-left 10s; /* Safari and Chrome */
+	-o-transition:margin-left 10s; /* Opera */
+}
+
+#text {
+	font-family: Arial;
+	font-size: 28px;
+	color: #C0C0C0;
+}
+
+#main:hover #text {
+	margin-left: 300px;
+	color: #CC00CC;
+	-webkit-transition-duration: 2s;
+  	-moz-transition-duration: 2s;
+  	-o-transition-duration: 2s;
+  	transition-duration: 2s;
+}
